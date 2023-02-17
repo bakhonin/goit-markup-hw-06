@@ -98,6 +98,11 @@ body {
 /* ===============HEADER============== */
 
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
   padding-top: 24px;
   padding-bottom: 28px;
 }
