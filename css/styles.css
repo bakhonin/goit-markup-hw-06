@@ -830,6 +830,16 @@ body {
   padding: 0;
 
   cursor: pointer;
+
+  transition-property: background-color, fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
 }
 
 
