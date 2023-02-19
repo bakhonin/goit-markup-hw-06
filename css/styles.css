@@ -663,7 +663,7 @@ body {
   align-items: center;
   padding: 8px 24px;
 
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   color: #ffffff;
   background: #4D5AE5;
@@ -1077,7 +1077,7 @@ body {
 }
 
 .modal-send-btn {
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   
   font-weight: 500;
