@@ -360,8 +360,13 @@
        <div class="footer-subscribe">
            <h2 class="footer-title-subscribe">Subscribe</h2>
            <form class="subscribe-form">
-            <input type="text" class="subscribe-input" placeholder="E-mail">
-            <button type="submit" class="subscribe-btn">Subscribe</button>
+            <label><input type="text" name="user_subscribe" class="subscribe-input" placeholder="E-mail"></label>
+            <span class="subscribe-form-btn">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+                <svg class="form-subscribe-btn-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-Frame3"></use>
+                </svg>
+            </span>
            </form>
        </div>
     </div>
@@ -369,7 +374,7 @@
 
                 <!-- MODAL-WINDOW--> 
 
-<div class="backdrop " data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <p class="tittle-modal">Leave your contacts and we will call you back</p>
         <form class="modal-form">
@@ -405,10 +410,9 @@
                 <span class="modal-form-input-desc">Comment</span>
             <textarea name="user_comment" class="modal-form-comment" placeholder="Text input"> </textarea>
             </label>
-            <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check">
-            <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the <a href=""> Privacy Policy</a></label>
-            
-            <button type="submit" class="modal-send-btn">Send</button>
+            <input id="user-policy" type="checkbox" name="user_policy" class="modal-form-check visually-hidden">
+            <label for="user-policy" class="modal-form-check-desc">I accept the terms and conditions of the&nbsp; <a href=""> Privacy Policy</a></label>
+            <span class="modal-form-send-btn"><button type="submit" class="modal-send-btn">Send</button></span class="">
         </form>
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-btn-icon" width="8" height="8">
