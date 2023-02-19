@@ -647,7 +647,9 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
 
-  outline: none;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:focus {
@@ -691,10 +693,8 @@ body {
 
 .form-subscribe-btn-icon {
   position: absolute;
-  top: 0;
+  top: 8px;
   right: 24px;
-  transform: translate(0, 25% );
-  
 }
 
 /* ============================/INDEX.HTML============================= */
